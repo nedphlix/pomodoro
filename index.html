@@ -1,4 +1,7 @@
 <!doctype html>
+
+<!-- Thanks to Mike Koenig for the bell sound. Used under Attribution 3.0 license. This sound is not my own, check out http://soundbible.com/1496-Japanese-Temple-Bell-Small.html for reference or if you want to find sounds for your own projects. -->
+
 <html>
 <head>
 	<title></title>
@@ -14,13 +17,46 @@
 	<div class="container-fluid">
 		<div>
 			<div class="row">
-				<div class="col-md-6 col-md-offset-3">
+				<div class="col-md-10 col-md-offset-1">
+					<div id="p-button-container">
+						<span>Session length:</span>
+						<button id="pMinusButton">-</button>
+						<span id="pTimeSpan"></span>
+						<button id="pPlusButton">+</button>
+					</div>
+					<div id="b-button-container">
+						<span>Break length:</span>
+						<button id="bMinusButton">-</button>
+						<span id="bTimeSpan"></span>
+						<button id="bPlusButton">+</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-10 col-md-offset-1 mid-container">
+					<div>
+						<p id="binarySpan">Work</p>
+						<div id="sound"></div>
+					</div>
 					<div id="clockdiv">
 						<span class="minutes"></span> minutes
 						<span class="seconds"></span> seconds
 					</div>
 				</div>
 			</div>
+
+			<div class="row">
+				<div class="col-md-10 col-md-offset-1">
+					<div id="main-buttons-container">
+						<button id="startButton" class="main-buttons">Start</button>
+						<button id="stopButton" class="main-buttons">Stop</button>
+						<button id="resetButton" class="main-buttons">Reset</button>
+						<button id="breakButton" class="main-buttons">Break</button>
+					</div>
+				</div>
+			</div>
+
 		</div>
 	</div>
 </body>
