@@ -14,14 +14,24 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 
+html { 
+  background: url(clock.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 body {
 	font-family: 'Source Sans Pro';
 	font-size: 18px;
 	padding: 50px;
+	background-color: rgba(255,255,255,0.25);
+	height: 100vh;
 }
 
 button {
-	background-color: #FFF;
+	background-color: transparent;
 	border: 0px;
 	padding: 1px 3px 1px 3px;
 }
@@ -36,7 +46,7 @@ button {
 }
 
 .mid-container {
-	margin: 50px 0px 100px 0px;
+	margin: 50px 0px 25px 0px;
 	width: 100%;
 }
 
@@ -51,7 +61,7 @@ button {
 }
 
 .main-buttons {
-	font-size: 27px;
+	font-size: 22.5px;
 	margin-left: 25px;
 }
 
